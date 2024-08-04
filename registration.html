@@ -1,82 +1,144 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      background-color: black;
-      align-content: center;
-      text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    }
+h1 {
+  color: #ff6f00;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-    input {
-      color: white;
-      display: table-cell;
-    }
+.registration-form {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    input {
-      border-radius: px;
-      border-color: white;
-      border-radius: 8px;
-      border: solid;
-      color: orange;
-      display: table-cell;
-      cursor: pointer;
-    }
+.form-group {
+  margin-bottom: 20px;
+}
 
-    .registration {
-      text-decoration-color: white;
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 
-    }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="radio"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  margin-top: 5px;
+}
 
-    .btn {
-      text-align: center;
-      color: orange;
-      background-color: white;
-      border-radius: 1rem;
-      border: solid;
-      cursor: pointer;
-    }
+input[type="checkbox"] {
+  margin-right: 10px;
+}
 
-    h1 {
-      color: orangered;
-      border-radius: 1px;
-      padding: 5px;
-    }
+.btn {
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffa040;
+}
+
+a {
+  color: #ff6f00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 
 <body>
-  <h1>Join Us </h1>
-  <div class="registration">
-    <font color="white">
-      First Name:
-      <input type="text" placeholder="First Name" required><br><br>
-      Middle Name:
-      <input type="text" placeholder="Middle Name" required><br><br>
-      Last Name:
-      <input type="text" placeholder="Last Name" required><br><br>
-      Gender:
-      <input type="radio" name="gender" value="Male">MALE<input type="radio" name="gender" value="Female"
-        checked>FEMALE<br><br>
-      DOB:
-      <input class="date" type="date" placeholder="DOB" required><br><br>
-      Phone No:
-      <input type="tel" placeholder="Enter Your Number" required><br><br>
-      Email:
-      <input type="email" placeholder="Enter Your Email" required><br><br>
-      New Password:
-      <input type="password" placeholder="New Password" required><br><br>
-      confirm Password:
-      <input type="password" placeholder="Re-Enter Your password" required><br><br>
-
-      <input class="confirm" type="checkbox"><b>I accept the Terms of use & Privacy policy.</b><br><br>
-
-      <button class="btn"><b>Register Now</b></button>
+  <div class="container">
+    <h1>Join Us</h1>
+    <form class="registration-form">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+      </div>
+      <div class="form-group">
+        <label for="middle-name">Middle Name:</label>
+        <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+      </div>
+      <div class="form-group">
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">New Password:</label>
+        <input type="password" id="password" name="password" placeholder="New Password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-Enter Your password"
+          required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" class="checkbox">
+        <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label>
+      </div>
+      <button type="submit" class="btn">Register Now</button>
+    </form>
   </div>
 </body>
 
