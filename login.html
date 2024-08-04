@@ -1,70 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Login.css">
   <title>Login</title>
   <style>
     body {
       background-color: black;
-      padding-left: 50;
-    margin-left: 50;
-    padding-top: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
     .Login {
       color: orange;
       text-align: center;
-      margin: left 50rem;
-      ;
-      font-size: 30;
-      width: 200px;
-      border: 5px solid;
+      font-size: 24px;
+      width: 300px;
+      border: 1px solid;
       padding: 25px;
-      margin: 150px;
-      cursor: pointer;
-      align-items: center;
-      align-content: center;
     }
 
-    input {
-      border-radius: 7px;
-      border: solid;
-      color: orange;
-    }
-
-    .enter {
-      cursor: pointer;
-      border-radius: 10rem;
-      border: solid;
-      border: white;
-      color: black;
-
-    }
-
-    a {
-      color: white;
-      font-size: 15;
-      text-decoration: none;
-    }
-
-    .register {
-      font-size: 15;
-    }
   </style>
 </head>
 
 <body>
   <div class="Login">
-    Username <br>
-    <input type="text" placeholder="Type your Username" required><br>
-    password <br>
-    <input type="password" placeholder="Type your password" required><br><br>
-    <button class="enter">Login</button><br>
-    <a href="">forgot your password?</a><br>
-    <div class="register">
-      Not registered? <a href="registration.html">Click here</a>
-    </div>
+    <h2>Login</h2>
+    <form>
+      Username <br>
+      <input type="text" placeholder="Type your Username" required><br>
+      Password <br>
+      <input type="password" placeholder="Type your password" required><br><br>
+      <button type="submit">Login</button><br>
+    </form>
   </div>
 </body>
 
