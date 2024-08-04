@@ -1,189 +1,108 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="profile1.css">
-
   <title>My Profile</title>
-
   <style>
-
-    
-
-    body{
-
-      background-color:black;
-
-      font-size: 2.0rem;
-
-    }
-
-    .details{
-
-      color: white;
-
-       }
-
-    .bdy{
-
-      text-align: center;
-
-      margin: 0 auto;
-
-      width: 300px;
-
-      
-
-    }
-
-    .name{
-
-      color:white;
-
-    }
-
-.pr{
-
-  color: orange;
-
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff; 
 }
 
-.detail
-
-{
-
-  color: white;
-
+.detail {
+  background-color: #333; 
+  padding: 10px;
+  text-align: center;
 }
 
-.hello{
-
-  color: orange;
-
-  text-align: relative;
-
-
-
-}
-
-.hire
-
-{
-
-  padding: 5px;
-
-  display: inline;
-
-  border-style: solid;
-
-  border-radius: none;
-
-  border-radius: 15px;
-
-  color: black;
-
-  background-color: orange;
-
-  border-color: orange;
-
-  cursor: pointer;
-
-}
-
-.prj{
-
-  padding: 5px;
-
-  display: inline;
-
-  border-style: solid;
-
-  border-radius: none;
-
-  border-radius: 15px;
-
-  color:white;
-
-  background-color:black;
-
-  border-color: white;
-
-  cursor: pointer;
-
-}
-
-.detail{
-
-  color: white;
-
-float: right;
-
-
-
-}
-
-a{
-
-  color: white;
-
-  display: inline;
-
-  position: relative;
-
+.detail a {
+  color: #fff;
   text-decoration: none;
-
-font-size: 1.3rem;
-
+  margin: 0 10px;
+  font-size: 1.2rem;
 }
 
- 
+.profile {
+  background-color: #444; 
+  padding: 20px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 10px; 
+}
+
+.bdy {
+  padding: 20px;
+}
+
+.hello {
+  color: orange;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.pr {
+  color: orange;
+  font-weight: bold;
+}
+
+.details {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hire, .prj {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hire {
+  background-color: orange;
+  color: #222;
+}
+
+.prj {
+  background-color: #555; 
+  color: #fff;
+}
 
   </style>
-
 </head>
 
 <body>
-
   <div class="detail">
-
-    <a href="index.html">Home</a>
-
-    <a href="">Resume</a>
-
-    <a href="">Skills</a>
-
-    <a href="">My Projects</a>
-
+    <a href="portfolio.html">Home</a>
+    <a href="#">Resume</a>
+    <a href="#">Skills</a>
+    <a href="#">My Projects</a>
     <a href="login.html">Login/Sign up</a>
-
     <a href="about.html">About</a>
+  </div>
 
-    
-
-</div>
-
-<br>
-
-  <div class="bdy">
-
- <p class="hello"> Hello!</p>
-
-  <p class="name"> I'm <span class="pr">Prakash Raj</span></p>
-
-  <p class="details"> A Web Developer | FreeLancer</p> 
-
-  <button class="hire">Hire ME</button> <button class="prj">My Projects</button>
-
-</div>
-
+  <div class="profile">
+    <div class="bdy">
+      <p class="hello">Hello!</p>
+      <p class="name">I'm <span class="pr">Prakash Raj</span></p>
+      <p class="details">A Web Developer | Freelancer</p>
+      <button class="hire">Hire Me</button>
+      <button class="prj">My Projects</button>
+    </div>
+  </div>
 </body>
-
-
 
 </html>
